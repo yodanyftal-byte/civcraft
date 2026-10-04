@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.78'
+}
+version = '1.0.0'
+group = 'com.example.blockburg'
+base { archivesName = 'blockburg' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+neoForge {
+    version = '21.1.172'
+    runs {
+        client { client() }
+        server { server(); programArguments.add('--nogui') }
+    }
+    mods { blockburg { sourceSet sourceSets.main } }
+}

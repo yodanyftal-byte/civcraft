@@ -1,0 +1,7 @@
+{
+  "type": "blockburg:city",
+  "biomes": "#blockburg:has_city",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "terrain_adaptation": "none"
+}
